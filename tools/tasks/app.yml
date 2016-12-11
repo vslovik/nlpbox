@@ -1,0 +1,4 @@
+---
+- git:
+    repo: https://github.com/avisingh599/visual-qa.git
+    dest: //home/vagrant/visual-qa
