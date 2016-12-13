@@ -28,4 +28,6 @@
     - spacy
     - scikit-learn
     - progressbar
+    - Cython
+    - word2vec
   sudo: no
