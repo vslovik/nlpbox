@@ -70,6 +70,9 @@ Vagrant.configure(2) do |config|
   #	source ~/.bashrc
   # SHELL
 
+  config.vm.synced_folder "~/.ssh", "/home/vagrant/keys/", nfs: false
+  config.vm.synced_folder "../nlp_project", "/opt/nlp_project", nfs: false
+
      config.vm.provision :ansible_local do |ansible|
        #ansible.verbose = "vvv"
        ansible.playbook = "playbook.yml"
